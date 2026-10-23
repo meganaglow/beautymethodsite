@@ -113,6 +113,9 @@ button, input, select, textarea { font: inherit; }
 .btn--ghost:hover { background: var(--ink); color: white; }
 .btn--light { background: var(--sand); border-color: var(--sand); color: var(--ink); }
 .btn--light:hover { background: #eadfce; border-color: #eadfce; }
+.btn--holiday { color: var(--ink); border-color: #9c7538; background: linear-gradient(120deg, #e6c993, #f6e7c5 48%, #d7b371); }
+.btn--holiday:hover { color: var(--ink); border-color: #816438; background: #efdbb2; }
+.btn--holiday > span { color: #735222; font-size: 1.2rem; line-height: 1; }
 .text-link {
   display: inline-flex; gap: 8px; align-items: center;
   font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
@@ -191,7 +194,11 @@ button, input, select, textarea { font: inherit; }
   pointer-events:none;
 }
 
-.promotion { padding: 56px 0; background: var(--sand); border-block: 1px solid var(--line); }
+.promotion { position: relative; isolation: isolate; padding: 56px 0; background: radial-gradient(ellipse at top right, #f5e6c7, transparent 60%), var(--sand); border-block: 1px solid #ad874c; }
+.promotion::before { content: ""; position: absolute; inset: 12px; border: 1px solid rgba(129,100,56,.4); pointer-events: none; z-index: -1; }
+.promotion-sparkles { display: flex; align-items: center; justify-content: center; gap: 18px; color: var(--gold-text); margin: -26px 0 22px; line-height: 1; pointer-events: none; }
+.promotion-sparkles span { font-size: 1.5rem; }
+.promotion-sparkles span:nth-child(2) { font-size: .75rem; }
 .promotion-inner { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
 .promotion-copy { max-width: 540px; }
 .promotion h2, .promotion h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -.025em; line-height: 1.05; margin: 0 0 18px; }
@@ -366,6 +373,7 @@ textarea { min-height:130px; resize:vertical; }
   .hero-actions { grid-template-columns: 1fr; }
   .hero-actions > :first-child { justify-self: stretch; }
   .promotion { padding-block: 40px; }
+  .promotion-sparkles { margin-top: -10px; }
   .promotion-inner { grid-template-columns: 1fr; gap: 30px; }
   .promotion-offer { border-left: 0; border-top: 1px solid rgba(21,21,21,.25); padding: 30px 0 0; }
   .container { width:min(calc(100% - 32px), var(--max)); }
