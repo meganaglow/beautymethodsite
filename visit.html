@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visit & Book | The Beauty Method, Aptos</title><meta name="description" content="Visit The Beauty Method in Aptos, California and request a consultation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"><link rel="icon" type="image/png" href="assets/beauty-method-mark.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="brand-masthead">
+  <a class="brand-logo-link" href="index.html" aria-label="The Beauty Method home">
+    <img class="brand-logo" src="assets/beauty-method-logo.png" alt="The Beauty Method Medical Aesthetics">
+  </a>
+</header>
+<div class="site-header">
+  <div class="container header-inner">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#method">The Method</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="visit.html" aria-current="page">Contact</a>
+      <a class="nav-book" href="visit.html#book" data-book-link>Book an Appointment</a>
+    </nav>
+    <a class="btn btn--light header-cta" href="visit.html#book" data-book-link>Book an Appointment</a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</div>
+<main id="main">
+  <section class="page-hero"><div class="container page-hero-grid"><div><p class="eyebrow">Visit</p><h1 class="h1-page">Book an Appointment.</h1></div></div></section>
+  <section class="container visit-grid"><div><p class="eyebrow">Aptos, California</p><h2 class="h2">The Beauty Method</h2><p>Located just off Soquel Drive in Aptos, in the same parking lot as the Hideout restaurant. We serve clients throughout Aptos, Capitola, Santa Cruz, and the surrounding Monterey Bay area.</p><ul class="contact-list"><li><strong>Address</strong><span>9051 Soquel Drive, Unit F<br>Aptos, CA 95003</span></li><li><strong>Medical Director</strong><span>Nikolas Greenson, MD<br>The Beauty Method Inc.</span></li><li><strong>Office</strong><a href="tel:+18316126072">831-612-6072</a></li><li><strong>Cell</strong><span><a href="tel:+18318185455">831-818-5455</a><br><a href="sms:+18318185455">Text</a> for appointments after hours or weekends</span></li><li><strong>Consultations</strong><span>Complimentary</span></li><li><strong>Parking</strong><span>Shared lot with the Hideout restaurant</span></li></ul><div class="actions"><a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=9051+Soquel+Drive+Unit+F+Aptos+CA+95003" target="_blank" rel="noopener">Get directions</a></div><div class="map-embed" style="margin-top:34px"><iframe src="https://www.google.com/maps?q=9051+Soquel+Drive+Unit+F+Aptos+CA+95003&output=embed" width="100%" height="360" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to The Beauty Method, 9051 Soquel Drive, Unit F, Aptos, CA 95003"></iframe></div></div>
+    <div class="contact-form" id="book"><p class="eyebrow">Consultation request</p><h2 class="h2" style="font-size:3rem">Start your Beauty Method.</h2><p>Your consultation is complimentary. We'll talk through your goals, take a close look at your skin and features, and recommend a plan built around you — no pressure, and no obligation to book anything further.</p><p>Fill out the form below and our team will follow up to schedule your visit.</p>
+      <form name="consultation-request" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="consultation-request"><p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+        <div class="form-grid"><div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div><div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div><div class="field"><label for="interest">Interested in</label><select id="interest" name="interest"><option>Consultation</option><option>Botox / Dysport</option><option>Dermal Filler</option><option>Microneedling</option><option>IPL Photofacial</option><option>Laser Resurfacing</option><option>Gift card</option><option>Not sure yet</option></select></div><div class="field full"><label for="message">General note</label><textarea id="message" name="message" placeholder="Optional — keep this general. Please do not include medical history or sensitive health information."></textarea></div><div class="field full"><button class="btn" type="submit">Request a consultation</button></div></div>
+      </form>
+    </div>
+  </section>
+  <section class="section" style="background:var(--ivory)"><div class="container section-head"><p class="eyebrow">Before your visit</p><h2 class="h2">A few things to confirm.</h2><p class="lede">Consultations are complimentary. Once your appointment is booked, pre- and post-care instructions are sent to you automatically based on the treatment scheduled, so you know exactly how to prepare and what to expect afterward.</p><p>If you need to reschedule or cancel, we ask for at least 48 hours' notice.</p></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><div class="brand"><span>The</span><span>Beauty Method</span></div><p>9051 Soquel Drive, Unit F<br>Aptos, CA 95003<br>Office <a href="tel:+18316126072">831-612-6072</a><br>Cell <a href="tel:+18318185455">831-818-5455</a><br><a href="sms:+18318185455">Text</a> for appointments after hours or weekends</p><p class="footer-legal-name">The Beauty Method Inc.<br>Medical Director: Nikolas Greenson, MD</p></div><div><div class="footer-title">Navigate</div><div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="visit.html">Contact</a></div></div><div><div class="footer-title">Treatments</div><div class="footer-links"><a href="services.html#neuromodulators">Botox & Dysport</a><a href="services.html#filler">Dermal Filler</a><a href="services.html#microneedling">Microneedling</a><a href="services.html#ipl">IPL Photofacial</a><a href="services.html#resurfacing">Laser Resurfacing</a></div></div><div><div class="footer-title">Connect</div><div class="footer-links"><a href="https://www.instagram.com/nurseinjector_jillian" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/novellaskin" target="_blank" rel="noopener">Facebook</a></div></div></div><div class="container footer-bottom"><div>© <span data-year></span> The Beauty Method Inc. Information on this site is general and is not medical advice. Individual results vary; consultation and medical review are required before treatment.</div><div class="footer-credit">Design by <a href="https://aglowstudios.ai" target="_blank" rel="noopener">aglowstudios.ai</a></div></div></footer>
+<script src="script.js"></script></body></html>
